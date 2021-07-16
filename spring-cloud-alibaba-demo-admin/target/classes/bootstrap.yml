@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: admin-server
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yml
+        name: admin-config
+        namespace: e102b6ac-2c97-45ba-8de6-8d7fe27e11b4
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: e102b6ac-2c97-45ba-8de6-8d7fe27e11b4
+        service: admin-server
+logging:
+  level:
+    com:
+      alibaba:
+        nacos: warn
